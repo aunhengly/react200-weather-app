@@ -29,7 +29,9 @@ export default class SearchResult extends React.Component {
                         </div>
                     </div>
                     ): (
-                        <div>Hello! Entry Some City First.</div>
+                        <div>
+                            <h2 className='card-title text-center'>Hello! Entry Some City First.</h2>
+                        </div>
                     )}
                     
                 </div>
