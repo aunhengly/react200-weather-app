@@ -22,7 +22,7 @@ export default function searchReducer(state = defaultState, action) {
         }
         case 'GO_FULFILLED':
         {
-            console.log("h", payload)
+            console.log("ful", payload)
             var date = new Date();
             var day= moment(date).format('l');
             var time= moment(date).format('hh:mm:ss');
@@ -36,7 +36,7 @@ export default function searchReducer(state = defaultState, action) {
         case 'GO_REJECTED':
         {
             // console.log("REJECTED: ", payload);
-            console.log("h", payload)
+            console.log("reg", payload)
             return {
                 ...state,
             };
@@ -44,7 +44,7 @@ export default function searchReducer(state = defaultState, action) {
         case 'GO_PENDING':
         {
             // console.log("pending: ", payload)
-            console.log("h", payload)
+            console.log("pen", payload)
             return {
                 ...state
             };
